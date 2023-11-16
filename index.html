@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="script" href="script.js" />
+  </head>
+  <body class="body-de-inicio">
+    <h1>I N <span> S I</span> D I O U S</h1>
+    <p class="h3">The party from the <span>afterlife</span></p>
+    <h2 class="titulo-principal">IN<span>SI</span>DIOUS</h2>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar">
+            <li class="navbar">
+              <a class="nav-link active" aria-current="page" href="#events"
+                >UPCOMING EVENTS</a
+              >
+            </li>
+            <li class="navbar">
+              <a class="nav-link" href="sets.html">SETS</a>
+            </li>
+            <li class="navbar">
+              <a class="nav-link" href="#contact">CONTACT/HELP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="countdown">
+      <div id="countdown-container">
+        <h4>NEXT EVENT</h4>
+        <div class="countdown-item">
+          <span id="days"></span>
+          <p>Días</p>
+        </div>
+        <div class="countdown-item">
+          <span id="hours"></span>
+          <p>Horas</p>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes"></span>
+          <p>Minutos</p>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds"></span>
+          <p>Segundos</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="events" class="seccion">
+      <p class="events">SACÁ TUS ENTRADAS</p>
+      <div class="container">
+        <div class="imagen-entrada">
+          <img
+            src="./IMAGENES/entradabuenosaires.jpg"
+            alt="Entrada buenos aires"
+          />
+          <button class="btn-comprar" onclick="showModal()">Comprar</button>
+        </div>
+        <div class="imagen-entrada">
+          <img src="./IMAGENES/entradamardel.jpg" alt="" />
+          <button class="btn-comprar" onclick="showModal()">Comprar</button>
+        </div>
+        <div class="imagen-entrada">
+          <img src="./IMAGENES/entradamendoza.jpg" alt="" />
+          <i class="fas fa-lock"></i>
+        </div>
+        <div class="imagen-entrada">
+          <img src="./IMAGENES/entradapunta.jpg" alt="" />
+          <i class="fas fa-lock"></i>
+        </div>
+        <div class="imagen-entrada">
+          <img src="./IMAGENES/entradabariloche.jpg" alt="" />
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="momentos-insidious" class="section">
+      <div class="slider-container">
+          <!-- Slide 1 -->
+          <div class="slider-item">
+              <img src="./IMAGENES/imagen1.PNG" alt="Imagen 1">
+              <img src="./IMAGENES/imagen2.PNG" alt="Imagen 2">
+              <img src="./IMAGENES/imagen3.jpg" alt="Imagen 3">
+              <img src="./IMAGENES/imagen4.PNG" alt="Imagen 4">
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="slider-item">
+              <img src="./IMAGENES/imagen5.PNG" alt="Imagen 5">
+              <img src="./IMAGENES/imagen6.PNG" alt="Imagen 6">
+              <img src="./IMAGENES/imagen5.PNG" alt="Imagen 5">
+              <img src="./IMAGENES/imagen6.PNG" alt="Imagen 6">
+              <!-- Más imágenes aquí -->
+          </div>
+          <div class="slider-item">
+            <img src="./IMAGENES/imagen1.PNG" alt="Imagen 1">
+            <img src="./IMAGENES/imagen2.PNG" alt="Imagen 2">
+            <img src="./IMAGENES/imagen3.jpg" alt="Imagen 3">
+            <img src="./IMAGENES/imagen4.PNG" alt="Imagen 4">
+        </div>
+          <a class="slider-arrow left-arrow" onclick="moveSlide(-1)">&#10094;</a>
+          <a class="slider-arrow right-arrow" onclick="moveSlide(1)">&#10095;</a>
+      </div>
+  </section>
+  
+    
+
+    <section id="contact" class="seccion">
+      <div id="formtsl" class="formtsl container">
+        <form>
+          <p class="contact-title">CONTACTATE CON NOSOTROS</p>
+          <p class="text-center">
+            Podés contactarte a través de nuestras redes sociales o llenando el
+            formulario. Respondemos a la brevedad.
+          </p>
+
+          <div class="mb-3 row form-group">
+            <label for="nombre" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Escribe tu nombre"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row form-group">
+            <label for="email" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Escribe tu email"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row form-group">
+            <label for="comentarios" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+              <textarea
+                class="form-control"
+                id="comentarios"
+                rows="4"
+                placeholder="Déjanos tu consulta"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="compras-de-entrada" id="compras-de-entrada">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <form action="">
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Nombre y apellido" required />
+
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Email" required />
+
+        <label for="repeat email"></label>
+        <input
+          type="repeat email"
+          id="repeat email"
+          placeholder="Repetir email"
+          required
+        />
+
+        <label for="number"></label>
+        <input type="text" id="number" placeholder="Celular" required />
+
+        <label for="number"></label>
+        <input type="text" id="number" placeholder="DNI" required />
+
+        <label for="ticketType"></label>
+        <select id="ticketType" required>
+          <option value="vip">INGRESO VIP MUJERES $7.000</option>
+          <option value="regular">INGRESO GENERAL MUJERES $5.000</option>
+          <option value="vip">INGRESO VIP HOMBRES $10.000</option>
+          <option value="regular">INGRESO GENERAL HOMBRES $7.000</option>
+          <label for="ticket"></label>
+        </select>
+
+        <label for="ticket"></label>
+        <input
+          type="number"
+          id="ticket"
+          placeholder="Ticket"
+          required
+        />
+        <button type="button" onclick="purchaseTicket()">
+          Comprar Entrada
+        </button>
+      </form>
+    </div>
+    
+    <div class="confirmacionDeCompra" id="confirmacionDeCompra">
+      <span class="close" onclick="cancelPurchase()">&times;</span>
+      <div class="confirmacionDeCompra-content">
+        <div class="confirmacionDeCompra-header">
+          <h2>¡Gracias por tu compra!</h2>
+        </div>
+        <div class="confirmacionDeCompra-body">
+          <p>Tu compra se ha realizado con éxito</p>
+          <p>Te enviamos un mail con los detalles de tu compra.</p>
+        </div>
+        <div class="confirmacionDeCompra-footer">
+          <!-- boton para mostrar video -->
+          <button type="button" onclick="showVideo()">Ver video</button>
+        </div>
+      </div>
+    </div>
+    <div id="video">
+      <video src="./IMAGENES/insidious.mp4" autoplay></video>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+      <div>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-spotify"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
